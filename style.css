@@ -81,13 +81,12 @@ body {
 }
 
 .social-icons {
-    display: flex;
-    flex-wrap: nowrap;
     margin: 0;
     margin-top: -40px;
+    margin-left: -30%;
     font-size: 30px;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
 }
 
 .social-icon {
@@ -113,15 +112,6 @@ body {
     animation-direction: alternate;
 }
 
-.rotate {
-    animation: rotate 4s infinite;
-    animation-delay: 2s;
-}
-
-.breathe {
-    animation: breathe 10s infinite;
-}
-
 .social-icons [class*="fa fa-"]:hover { 
     background-color: black; 
 }
@@ -140,60 +130,8 @@ body {
     }
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(-360deg);
-    }
-}
-
-@keyframes breathe {
-    0% {
-        transform: translate(5px, 5px);
-    }
-
-    10% {
-        transform: translate(-5px, -5px);
-    }
-    20% {
-        transform: translate(5px, 5px);
-    }
-
-    30% {
-        transform: translate(-5px, -5px);
-    }
-    40% {
-        transform: translate(5px, 5px);
-    }
-
-    50% {
-        transform: translate(-5px, -5px);
-    }
-    60% {
-        transform: translate(5px, 5px);
-    }
-
-    70% {
-        transform: translate(-5px, -5px);
-    }
-    80% {
-        transform: translate(5px, 5px);
-    }
-
-    90% {
-        transform: translate(-5px, -5px);
-    }
-    100% {
-        transform: translate(5px, 5px);
-    }
-
-}
-
 .social-text {
-    margin-left: 20px;
+    text-align: center;
 }
 
 .img-2-box {
@@ -262,8 +200,8 @@ body {
     .social-icons {
         font-size: 30px;
         font-weight: 600;
-        text-align: left;
-        margin-left: 40%;
+        /* text-align: left; */
+        margin-left: 0!important;
     }
 
     .img-2-box {
@@ -323,8 +261,7 @@ body {
         display: block;
         font-size: 18px;
         font-weight: 400;
-        text-align: left;
-        margin-left: 110px;
+        margin-left: 0!important;
     }
 
     .social-icons [class*="fa fa-"] {

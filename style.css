@@ -93,7 +93,7 @@ body {
 }
 
 .social-icons [class*="fa fa-"] {
-    background-color: #7ccc14;
+    background: #7ccc14;
     border-radius: 30px;
     color: #fff;
     display: inline-block;
@@ -105,38 +105,6 @@ body {
     text-align: center;
     cursor: pointer;
 }
-
-.social-icons a:nth-child(1) i {
-    animation: change 8s normal infinite;
-    animation-delay: 1s;
-}
-.social-icons a:nth-child(2) i {
-    animation: change 8s normal infinite;
-    animation-delay: 2s;
-}
-.social-icons a:nth-child(3) i {
-    animation: change 8s normal infinite;
-    animation-delay: 3s;
-}
-.social-icons a:nth-child(4) i {
-    animation: change 8s normal infinite;
-    animation-delay: 4s;
-}
-
-@keyframes change {
-    
-    
-    0% {
-      color: #ffffff;
-      background-color: black;
-    }
-    
-    100% {
-      color: #ffffff;
-      background-color: #7ccc14;
-    }
-}
-  
 
 .bounce {
     animation: bounce 1s linear infinite;

@@ -8,6 +8,7 @@
     <script src="https://use.fontawesome.com/19d41cf9f4.js"></script>
     <title>J.A. Living Spaces | Sustainability Now</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="gray-cover"></div>
@@ -24,13 +25,15 @@
                 <p class="clear-text-1 text--black">COMING</p>
             </div>
             <div>
-                <p class="clear-text-2 text--green">SOON<span class="clear-dots">...</span></p>
+                <p class="clear-text-2 text--green bounce">SOON<span class="clear-dots">...</span></p>
             </div>
             <div class="social-icons">
-                <a href="https://www.facebook.com/jadesignassociates" target="_blank"><i class="fa fa-facebook icon"></i></a>
-                <a href="https://www.instagram.com/jalivingspaces/" target="_blank"><i class="fa fa-instagram icon"></i></a>
-                <a href="https://twitter.com/jalivingspaces" target="_blank"><i class="fa fa-twitter icon"></i></a>
-                <a href="https://www.linkedin.com/company/j-a-design-associates/" target="_blank"><i class="fa fa-linkedin icon"></i></a>
+                <div class="social-icon">
+                    <i class="fa fa-facebook icon"><a href="https://www.facebook.com/jadesignassociates" target="_blank"></a></i>
+                    <i class="fa fa-instagram icon"><a href="https://www.instagram.com/jalivingspaces/" target="_blank"></a></i>
+                    <i class="fa fa-twitter icon"><a href="https://twitter.com/jalivingspaces" target="_blank"></a></i>
+                    <i class="fa fa-linkedin icon"><a href="https://www.linkedin.com/company/j-a-design-associates/" target="_blank"></a></i>
+                </div>
                 <p class="social-name">jalivingspaces</p>
             </div>
         </div>
@@ -38,5 +41,19 @@
             <img src="leaves.png" alt="nature">
         </div>
     </div>
+
+    <script>
+        var els = $('.social-icon .icon');
+
+        (function rec(el) {
+        el.delay(2500).queue(function() {
+            var f = els.css('background-color','#7ccc14').first();
+            var n = $(this).css('background-color','black').next();
+
+            rec(n.length ? n : f);
+            $(this).dequeue();
+        });
+        })(els.first());
+    </script>
 </body>
 </html>

@@ -34,7 +34,10 @@
                     <i class="fa fa-twitter icon"><a href="https://twitter.com/jalivingspaces" target="_blank"></a></i>
                     <i class="fa fa-linkedin icon"><a href="https://www.linkedin.com/company/j-a-design-associates/" target="_blank"></a></i>
                 </div>
-                <p class="social-name">jalivingspaces</p>
+                <div class="social-text">
+                    <p class="social-name">jalivingspaces</p>
+                </div>
+                
             </div>
         </div>
         <div class="img-2-box">
@@ -46,7 +49,7 @@
         var els = $('.social-icon .icon');
 
         (function rec(el) {
-        el.delay(2500).queue(function() {
+        el.delay(2000).queue(function() {
             var f = els.css('background-color','#7ccc14').first();
             var n = $(this).css('background-color','black').next();
 
